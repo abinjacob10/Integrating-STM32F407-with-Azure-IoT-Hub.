@@ -8,9 +8,10 @@ This README file goes through detailed step by step method to integrate a microc
 Please note: 
 
 This project is still under progress(as of 23rd of October).
-
 Cross compiler is built on Ubuntu 22.04 machine.
 
+.
+.
 
 The project could be broken down into four major parts. Briefly explained as:
 
