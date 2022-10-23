@@ -91,4 +91,10 @@ A.5.  make the mboot(ran inside /micropython-1.19.1/ports/stm32). Meaning build 
       drivers  elem.P        firmware.dfu  firmware.hex  fsload.o  genhdr      gzstream.P  main.o  pack.o  pins_af.py          ports     sdcard.P  ui.o           vfs_fat.o  vfs_lfs.o
       elem.o   firmware.bin  firmware.elf  firmware.map  fsload.P  gzstream.o  lib         main.P  pack.P  pins_STM32F4DISC.c  sdcard.o  shared    ui.P           vfs_fat.P  vfs_lfs.P
       
+      Notice the firmware.dfu file. This Device Firmware Upgrade(DFU) file will be used to write to the firmware( flash the firmware !!)
+      
+A.6.  Install the dfu utility(dfu-util). This utility will help to flash the above seen .dfu file into the STM board.
+
+      "apt-get install dfu-util"
+      
       
