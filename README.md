@@ -288,7 +288,7 @@ This time a reset on the board, by pressing on black reset button helped to get 
       Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
       
       
-      ![MicroPython pyboard listeds as a drive](https://user-images.githubusercontent.com/24519192/197406211-3e8d27c9-12ca-4e87-b421-78f0b5631ea4.png)
+![MicroPython pyboard listeds as a drive](https://user-images.githubusercontent.com/24519192/197406211-3e8d27c9-12ca-4e87-b421-78f0b5631ea4.png)
 
       
       
