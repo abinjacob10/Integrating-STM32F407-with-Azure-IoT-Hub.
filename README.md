@@ -114,7 +114,7 @@ A.7   Create a file named "49-stmdiscovery.rules" to the following location   "/
       SUBSYSTEMS=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="df11", MODE:="0666"
       
       
-     Notice above, Vendor ID and Product ID attributes 0483:df11 respectively, will be used to discover the microcontroller, firmware booted with .dfu file.
+    Notice above, Vendor ID and Product ID attributes 0483:df11 respectively, will be used to discover the microcontroller, firmware booted with .dfu file.
 
      After adding the file. Reload the added rules:
       
