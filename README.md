@@ -122,4 +122,18 @@ A.7   Create a file named "49-stmdiscovery.rules" to the following location   "/
 
 
 A.8   Put the board in DFU mode. 
-      To do this, you need to make BOOT0 high(connect physically BOOT0 to VDD(3v) on STM32board), and BOOT1 low(no need to do anything about this), and           reset the board.     
+      To do this, you need to make BOOT0 high(connect physically BOOT0 to VDD(3v) on STM32board), and BOOT1 low(no need to do anything about this), and           reset the board.
+      
+A.9   List the attached dfu capable devices using:
+       
+      dfu-util -l
+      
+      dfu-util 0.9
+
+      Copyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.
+      Copyright 2010-2016 Tormod Volden and Stefan Schmidt
+      This program is Free Software and has ABSOLUTELY NO WARRANTY
+      Please report bugs to http://sourceforge.net/p/dfu-util/tickets/
+
+      dfu-util: Cannot open DFU device 04f2:b724
+///
