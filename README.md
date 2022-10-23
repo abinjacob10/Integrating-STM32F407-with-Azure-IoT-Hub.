@@ -184,3 +184,37 @@ A.10  Upload DFU into STM32F4 board using dfu-util with the board in DFU mode as
                       a(alt-setting=0 (?))
                           -d(device 0483:df11 ,is connected to STM micro-usb port)
                                        -D(download- Write firmware from build-STM32F4DISC/firmware.dfu into device(0483:df11).
+                                       
+      dfu-util 0.9
+
+Copyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.
+Copyright 2010-2016 Tormod Volden and Stefan Schmidt
+This program is Free Software and has ABSOLUTELY NO WARRANTY
+Please report bugs to http://sourceforge.net/p/dfu-util/tickets/
+
+Opening DFU capable USB device...
+ID 0483:df11
+Run-time device DFU version 011a
+Claiming USB DFU Interface...
+Setting Alternate Setting #0 ...
+Determining device status: state = dfuERROR, status = 10
+dfuERROR, clearing status
+Determining device status: state = dfuIDLE, status = 0
+dfuIDLE, continuing
+DFU mode device DFU version 011a
+Device returned transfer size 2048
+DfuSe interface name: "Internal Flash  "
+file contains 1 DFU images
+parsing DFU image 1
+image for alternate setting 0, (2 elements, total size = 334808)
+parsing element 1, address = 0x08000000, size = 14608
+Download	[=========================] 100%        14608 bytes
+Download done.
+parsing element 2, address = 0x08020000, size = 320184
+Download	[=========================] 100%       320184 bytes
+Download done.
+done parsing DfuSe file
+
+
+Microcontroller board is listed as a flash drive
+      
