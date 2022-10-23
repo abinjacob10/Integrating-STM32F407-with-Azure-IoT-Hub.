@@ -100,6 +100,19 @@ A.5.  make the mboot(ran inside /micropython-1.19.1/ports/stm32). Meaning build 
 A.6.  Install the dfu utility(dfu-util). This utility will help to flash the above seen .dfu file into the STM board.
 
 
-      "apt-get install dfu-util"
+      "apt-get install dfu-util
+      
+      
+A.7   Create a file named "49-stmdiscovery.rules" to the following location   "/etc/udev/rules.d/", with following contents.
+
+      # f055:9800 - STM32F4 Discovery running MicroPython in USB Serial Mode (CN5)
+      ATTRS{idVendor}=="f055", ATTRS{idProduct}=="9800", ENV{ID_MM_DEVICE_IGNORE}="1"
+      ATTRS{idVendor}=="f055", ATTRS{idProduct}=="9800", ENV{MTP_NO_PROBE}="1"
+      SUBSYSTEMS=="usb", ATTRS{idVendor}=="f055", ATTRS{idProduct}=="9800", MODE:="0666"
+      KERNEL=="ttyACM*", ATTRS{idVendor}=="f055", ATTRS{idProduct}=="9800", MODE:="0666"
+      # 0483:df11 - STM32F4 Discovery in DFU mode (CN5)
+      SUBSYSTEMS=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="df11", MODE:="0666"
+      
+      
       
       
