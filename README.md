@@ -177,3 +177,10 @@ Ubuntu machine was rebooted to detect the STM board in dfu mode.
       Found DFU: [0483:df11] ver=2200, devnum=2, cfg=1, intf=0, path="3-2", alt=1, name="@Option Bytes  /0x1FFFC000/01*016 e", serial="326237753036"
       Found DFU: [0483:df11] ver=2200, devnum=2, cfg=1, intf=0, path="3-2", alt=0, name="@Internal Flash  /0x08000000/04*016Kg,01*064Kg,07*128Kg", serial="326237753036"
       
+A.10  Upload DFU into STM32F4 board using dfu-util with the board in DFU mode as seen in step A.8. Correspoding argument meaning are added below.
+
+      "sudo dfu-util -a 0 -d 0483:df11 -D build-STM32F4DISC/firmware.dfu"
+      
+                      a(alt-setting=0 (?))
+                          -d(device 0483:df11 ,is connected to STM micro-usb port)
+                                       -D(download- Write firmware from build-STM32F4DISC/firmware.dfu into device(0483:df11).
