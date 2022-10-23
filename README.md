@@ -16,10 +16,11 @@ B. Use external PHY device DP83848PHY connect to STM and setup IP connectivity t
 C. Configure MQTT telemtery protocol and program the board to send user button clicks. Do the same on Azure IoT hub to receive those clicks.
 
 D. Use Azure IoT Explorer to discover and monitor the MQTT telmetry messages sent from STM board.
+
 .
 .
 .
-.
+
 
 A. First Step(followed from https://github.com/micropython/micropython): 
 
