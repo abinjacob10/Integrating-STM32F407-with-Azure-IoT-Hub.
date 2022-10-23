@@ -81,4 +81,5 @@ A.5.  make(meaning build) the  Micropython for a microcontroller board(BOARD=STM
       dma.P              firmware.dfu    i2c.o             machine_i2s.o        modstm.P         pin_defs_stm32.P  pyb_can.o           rtc.o                     stm32_it.o   usbd_cdc_interface.P  wdt.P
 
 A.5.  make the mboot(ran inside micropython-1.19.1/ports/stm32)
+
       "make -C mboot BOARD=STM32F4DISC"
