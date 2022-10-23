@@ -286,4 +286,19 @@ This time a reset on the board, by pressing on black reset button helped to get 
       Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
       Bus 001 Device 002: ID 04f2:b724 Chicony Electronics Co., Ltd Integrated Camera
       Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+      
+      
+Executing dfu-util list command, does not show the dfu capable device. This is correct. STM board is no more in DFU mode, it is in FS mode.      
+      
+      dfu-util -l
+      dfu-util 0.9
+
+      Copyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.
+      Copyright 2010-2016 Tormod Volden and Stefan Schmidt
+      This program is Free Software and has ABSOLUTELY NO WARRANTY
+      Please report bugs to http://sourceforge.net/p/dfu-util/tickets/
+
+      dfu-util: Cannot open DFU device 04f2:b724                            
+      
+      
 
