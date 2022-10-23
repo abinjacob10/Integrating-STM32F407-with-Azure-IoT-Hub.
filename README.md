@@ -115,4 +115,4 @@ A.7   Create a file named "49-stmdiscovery.rules" to the following location   "/
       
       
       
-      
+      Notice above, Vendor ID and Product ID attributes 0483:df11 respectively, will be used to discover the microcontroller, firmware booted with .dfu file.
