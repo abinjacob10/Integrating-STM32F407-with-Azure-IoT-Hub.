@@ -140,3 +140,34 @@ A.9   List the attached dfu capable devices using:
       Please report bugs to http://sourceforge.net/p/dfu-util/tickets/
 
       dfu-util: Cannot open DFU device 04f2:b724
+
+
+      Ubuntu machine was rebooted to detect the STM board in dfu mode.
+      lsusb
+      Bus 006 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+      Bus 005 Device 003: ID 0489:e0cd Foxconn / Hon Hai Wireless_Device
+      Bus 005 Device 002: ID 06cb:00bd Synaptics, Inc. Prometheus MIS Touch Fingerprint Reader
+      Bus 005 Device 004: ID 0483:374b STMicroelectronics ST-LINK/V2.1
+      Bus 005 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+      Bus 004 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+      Bus 003 Device 002: ID 0483:df11 STMicroelectronics STM Device in DFU Mode                         <<
+      Bus 003 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+      Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+      Bus 001 Device 002: ID 04f2:b724 Chicony Electronics Co., Ltd Integrated Camera
+      Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+
+      dfu-util -l
+      dfu-util 0.9
+
+      Copyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.
+      Copyright 2010-2016 Tormod Volden and Stefan Schmidt
+      This program is Free Software and has ABSOLUTELY NO WARRANTY
+      Please report bugs to http://sourceforge.net/p/dfu-util/tickets/
+
+      dfu-util: Cannot open DFU device 04f2:b724
+      Found DFU: [0483:df11] ver=2200, devnum=2, cfg=1, intf=0, path="3-2", alt=3, name="@Device Feature/0xFFFF0000/01*004 e", serial="326237753036"
+      Found DFU: [0483:df11] ver=2200, devnum=2, cfg=1, intf=0, path="3-2", alt=2, name="@OTP Memory /0x1FFF7800/01*512 e,01*016 e", serial="326237753036"
+      Found DFU: [0483:df11] ver=2200, devnum=2, cfg=1, intf=0, path="3-2", alt=1, name="@Option Bytes  /0x1FFFC000/01*016 e", serial="326237753036"
+      Found DFU: [0483:df11] ver=2200, devnum=2, cfg=1, intf=0, path="3-2", alt=0, name="@Internal Flash  /0x08000000/04*016Kg,01*064Kg,07*128Kg", serial="326237753036"
+      
