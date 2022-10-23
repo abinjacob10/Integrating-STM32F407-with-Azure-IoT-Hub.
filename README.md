@@ -57,7 +57,7 @@ A.4. An ARM compiler is required for the build
     
         sudo apt-get install gcc-arm-none-eabi
         
-A.5.  make(meaning build) the  Micropython for a microcontroller board(BOARD=STM32F4DISC),(ran inside micropython-1.19.1/ports/stm32/ folder) 
+A.5.  make(meaning build) the  Micropython for a microcontroller board(BOARD=STM32F4DISC),(ran inside /micropython-1.19.1/ports/stm32/ folder) 
 
       "make BOARD=STM32F4DISC"  
     
@@ -80,6 +80,11 @@ A.5.  make(meaning build) the  Micropython for a microcontroller board(BOARD=STM
       dma.o              firmware1.bin   help.P            machine_i2c.P        modstm.o         pin_defs_stm32.o  py                  rng.P                     spi.P        usbd_cdc_interface.o  wdt.o
       dma.P              firmware.dfu    i2c.o             machine_i2s.o        modstm.P         pin_defs_stm32.P  pyb_can.o           rtc.o                     stm32_it.o   usbd_cdc_interface.P  wdt.P
 
-A.5.  make the mboot(ran inside micropython-1.19.1/ports/stm32). Meaning build the mbootloader
+A.5.  make the mboot(ran inside /micropython-1.19.1/ports/stm32). Meaning build the mbootloader
 
       "make -C mboot BOARD=STM32F4DISC"
+      
+      THis gave below built files
+      
+      ls (ran under micropython-1.19.1/ports/stm32/mboot/build-STM32F4DISC)
+      
