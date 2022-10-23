@@ -33,4 +33,14 @@ A.3. 'make' (meaning build) MicroPython cross-compiler(compiles .py scripts into
       ls
       build  gccollect.c  main.c  Makefile  mpconfigport.h  mphalport.h  mpy-cross  mpy-cross.map  mpy-cross.vcxproj  qstrdefsport.h  README.md
       
-A.4 An ARM compiler is required for the build
+A.4. An ARM compiler is required for the build
+
+    Inside Ubuntu, open a terminal and input
+    
+       "sudo add-apt-repository ppa:team-gcc-arm-embedded/ppa"
+       "sudo apt-get update"
+       
+    Continue to input to install toolchain
+    
+        sudo apt-get install gcc-arm-none-eabi
+A.5 
