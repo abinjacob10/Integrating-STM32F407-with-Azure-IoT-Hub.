@@ -25,6 +25,10 @@ D. Use Azure IoT Explorer to discover and monitor the MQTT telmetry messages sen
 .
 .
 
+.
+.
+.
+
 
 A. First Step(followed from https://github.com/micropython/micropython): 
 
