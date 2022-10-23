@@ -160,6 +160,10 @@ Ubuntu machine was rebooted to detect the STM board in dfu mode.
 
 
       dfu-util -l
+      
+      .
+      .
+      
       dfu-util 0.9
 
       Copyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.
