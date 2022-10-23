@@ -322,6 +322,8 @@ Using rshell to access the board.
 Install rshell
 
       sudo apt-get install rshell
+      
+Run rshell by using tty port ttyACM1      
       sudo python3 -m rshell.main -p /dev/ttyACM1
       Using buffer-size of 512
       Connecting to /dev/ttyACM1 (buffer-size 512)...
