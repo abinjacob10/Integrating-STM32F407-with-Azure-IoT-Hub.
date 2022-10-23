@@ -245,3 +245,31 @@ At this point, Ubuntu could not see the flash drive of the Pyboard.
       ├─nvme0n1p3 259:3    0 225.7G  0 part 
       ├─nvme0n1p4 259:4    0  1000M  0 part 
       └─nvme0n1p5 259:5    0   250G  0 part /var/snap/firefox/common/host-hunspell
+      
+This time a reset on the board, by pressing on black reset button helped to get the Pyboard flash get detected in Ubuntu.
+
+      NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+      loop0         7:0    0     4K  1 loop /snap/bare/5
+      loop1         7:1    0    62M  1 loop /snap/core20/1611
+      loop2         7:2    0  63.2M  1 loop /snap/core20/1623
+      loop4         7:4    0 238.1M  1 loop /snap/firefox/1918
+      loop5         7:5    0 346.3M  1 loop /snap/gnome-3-38-2004/115
+      loop6         7:6    0 346.3M  1 loop /snap/gnome-3-38-2004/119
+      loop7         7:7    0  91.7M  1 loop /snap/gtk-common-themes/1535
+      loop8         7:8    0  37.1M  1 loop /snap/hunspell-dictionaries-1-7-2004/2
+      loop9         7:9    0  45.9M  1 loop /snap/snap-store/592
+      loop10        7:10   0  45.9M  1 loop /snap/snap-store/599
+      loop11        7:11   0    48M  1 loop /snap/snapd/16778
+      loop12        7:12   0    48M  1 loop /snap/snapd/17029
+      loop13        7:13   0   284K  1 loop /snap/snapd-desktop-integration/14
+      loop14        7:14   0 236.8M  1 loop /snap/firefox/1943
+      sda           8:0    1     1M  0 disk /media/abin/DIS_F407VG
+      sdb           8:16   1   240K  0 disk 
+      └─sdb1        8:17   1   112K  0 part /media/abin/PYBFLASH                                          << second flash drive
+      nvme0n1     259:0    0 476.9G  0 disk 
+      ├─nvme0n1p1 259:1    0   260M  0 part /boot/efi
+      ├─nvme0n1p2 259:2    0    16M  0 part 
+      ├─nvme0n1p3 259:3    0 225.7G  0 part 
+      ├─nvme0n1p4 259:4    0  1000M  0 part 
+      └─nvme0n1p5 259:5    0   250G  0 part /var/snap/firefox/common/host-hunspell
+
