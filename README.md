@@ -1,7 +1,8 @@
 # Integrating STM32F407 with Azure IoT Hub.
 This README file goes through detailed step by step method to integrate a microcontroller board(STM32F407) with Azure Cloud(IoT Hub).
 
-
+.
+.
 
 
 Please note that this project is still under progress(as of 23rd of October).
@@ -15,12 +16,12 @@ B. Use external PHY device DP83848PHY connect to STM and setup IP connectivity t
 C. Configure MQTT telemtery protocol and program the board to send user button clicks. Do the same on Azure IoT hub to receive those clicks.
 
 D. Use Azure IoT Explorer to discover and monitor the MQTT telmetry messages sent from STM board.
+.
+.
+.
+.
 
-
-
-
-
-A. First Step(followed from https://github.com/micropython/micropython: 
+A. First Step(followed from https://github.com/micropython/micropython): 
 
 A.1. Download micropython from (https://micropython.org/download/) for Linux based hosts.
 
