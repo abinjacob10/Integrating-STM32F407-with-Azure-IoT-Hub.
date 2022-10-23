@@ -64,7 +64,7 @@ A.5.  make(meaning build) the  Micropython for a microcontroller board(BOARD=STM
     
     This gave me a new folder 'build-STM32F4DISC' with below files and folders.
       ls
-accel.o            drivers         firmware.elf      i2c.P                machine_i2s.P    modstm_qstr.h     pin_named_pins.o    pyb_can.P       rtc.P        stm32_it.P            usbd_conf.o
+      accel.o            drivers         firmware.elf      i2c.P                machine_i2s.P    modstm_qstr.h     pin_named_pins.o    pyb_can.P       rtc.P        stm32_it.P            usbd_conf.o
 accel.P            eth.o           firmware.hex      irq.o                machine_spi.o    modutime.o        pin_named_pins.P    pyb_i2c.o       sdcard.o     storage.o             usbd_conf.P
 adc.o              eth.P           firmware.map      irq.P                machine_spi.P    modutime.P        pin.o               pyb_i2c.P       sdcard.P     storage.P             usbd_desc.o
 adc.P              extint.o        flashbdev.o       lcd.o                machine_timer.o  mphalport.o       pin.P               pyb_spi.o       sdram.o      system_stm32.o        usbd_desc.P
