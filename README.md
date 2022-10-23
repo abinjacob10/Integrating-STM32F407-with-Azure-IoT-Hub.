@@ -128,6 +128,10 @@ A.9   List the attached dfu capable devices using:
        
       dfu-util -l
       
+      .
+      .
+      
+      
       dfu-util 0.9
 
       Copyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.
