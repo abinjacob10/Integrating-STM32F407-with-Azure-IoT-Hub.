@@ -56,4 +56,29 @@ A.4. An ARM compiler is required for the build
     Continue to input to install toolchain
     
         sudo apt-get install gcc-arm-none-eabi
-A.5 
+        
+A.5.  make(meaning build) the  Micropython for a microcontroller board(BOARD=STM32F4DISC)
+
+      "make BOARD=STM32F4DISC"  (ran inside micropython-1.19.1/ports/stm32/ folder)
+    
+    
+    This gave me a new folder 'build-STM32F4DISC' with below files and folders.
+      ls
+accel.o            drivers         firmware.elf      i2c.P                machine_i2s.P    modstm_qstr.h     pin_named_pins.o    pyb_can.P       rtc.P        stm32_it.P            usbd_conf.o
+accel.P            eth.o           firmware.hex      irq.o                machine_spi.o    modutime.o        pin_named_pins.P    pyb_i2c.o       sdcard.o     storage.o             usbd_conf.P
+adc.o              eth.P           firmware.map      irq.P                machine_spi.P    modutime.P        pin.o               pyb_i2c.P       sdcard.P     storage.P             usbd_desc.o
+adc.P              extint.o        flashbdev.o       lcd.o                machine_timer.o  mphalport.o       pin.P               pyb_spi.o       sdram.o      system_stm32.o        usbd_desc.P
+boardctrl.o        extint.P        flashbdev.P       lcd.P                machine_timer.P  mphalport.P       pins_af.py          pyb_spi.P       sdram.P      system_stm32.P        usbdev
+boardctrl.P        extmod          flash.o           led.o                machine_uart.o   mpnetworkport.o   pins_qstr.h         pybthread.o     servo.o      systick.o             usbd_hid_interface.o
+bufhelper.o        factoryreset.o  flash.P           led.P                machine_uart.P   mpnetworkport.P   pins_STM32F4DISC.c  pybthread.P     servo.P      systick.P             usbd_hid_interface.P
+bufhelper.P        factoryreset.P  frozen_content.c  lib                  main.o           mpthreadport.o    pins_STM32F4DISC.o  qspi.o          shared       timer.o               usbd_msc_interface.o
+build-STM32F4DISC  fatfs_port.o    frozen_mpy        machine_adc.o        main.P           mpthreadport.P    pins_STM32F4DISC.P  qspi.P          softtimer.o  timer.P               usbd_msc_interface.P
+can.o              fatfs_port.P    gccollect.o       machine_adc.P        modmachine.o     network_lan.o     powerctrlboot.o     resethandler.o  softtimer.P  uart.o                usb.o
+can.P              fdcan.o         gccollect.P       machine_bitstream.o  modmachine.P     network_lan.P     powerctrlboot.P     rfcore.o        spibdev.o    uart.P                usb.P
+dac.o              fdcan.P         genhdr            machine_bitstream.P  modpyb.o         pendsv.o          powerctrl.o         rfcore.P        spibdev.P    ulpi.o                usrsw.o
+dac.P              firmware0.bin   help.o            machine_i2c.o        modpyb.P         pendsv.P          powerctrl.P         rng.o           spi.o        ulpi.P                usrsw.P
+dma.o              firmware1.bin   help.P            machine_i2c.P        modstm.o         pin_defs_stm32.o  py                  rng.P           spi.P        usbd_cdc_interface.o  wdt.o
+dma.P              firmware.dfu    i2c.o             machine_i2s.o        modstm.P         pin_defs_stm32.P  pyb_can.o           rtc.o           stm32_it.o   usbd_cdc_interface.P  wdt.P
+
+
+
