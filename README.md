@@ -278,10 +278,10 @@ This time a reset on the board, by pressing on black reset button helped to get 
       Bus 006 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
       Bus 005 Device 003: ID 0489:e0cd Foxconn / Hon Hai Wireless_Device
       Bus 005 Device 002: ID 06cb:00bd Synaptics, Inc. Prometheus MIS Touch Fingerprint Reader
-      Bus 005 Device 005: ID 0483:374b STMicroelectronics ST-LINK/V2.1                       <<1(connected via mini-usb port)
+      Bus 005 Device 005: ID 0483:374b STMicroelectronics ST-LINK/V2.1                       <<1(connected via mini-usb port on board)
       Bus 005 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
       Bus 004 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
-      Bus 003 Device 003: ID f055:9800 MicroPython Pyboard Virtual Comm Port in FS Mode      <<2 (THis was in DFU mode, before second reset, micro-usb)
+      Bus 003 Device 003: ID f055:9800 MicroPython Pyboard Virtual Comm Port in FS Mode      <<2 (THis was in DFU mode, before second reset, micro-usb on board)
       Bus 003 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
       Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
       Bus 001 Device 002: ID 04f2:b724 Chicony Electronics Co., Ltd Integrated Camera
