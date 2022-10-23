@@ -24,9 +24,11 @@ A.1. Download micropython from (https://micropython.org/download/) for Linux bas
 A.2. Unzip the downloaded .tar.xz file using "tar -xvf micropython-1.19.1.tar.xz" for example. This gave me a folder "micropython-1.19.1".
 
 A.3. 'make' (meaning build) MicroPython cross-compiler(compiles .py scripts into .mpy files.)
+
     Before running 'make' in mpy-cross folder, it had below contents.
       ls
       gccollect.c  main.c  Makefile  mpconfigport.h  mphalport.h  mpy-cross.vcxproj  qstrdefsport.h  README.md
+      
     After running 'make' in mpy-cross folder, it has now below files/folders
       ls
       build  gccollect.c  main.c  Makefile  mpconfigport.h  mphalport.h  mpy-cross  mpy-cross.map  mpy-cross.vcxproj  qstrdefsport.h  README.md
