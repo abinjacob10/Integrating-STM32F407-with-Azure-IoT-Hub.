@@ -142,7 +142,9 @@ A.9   List the attached dfu capable devices using:
       dfu-util: Cannot open DFU device 04f2:b724
 
 
-      Ubuntu machine was rebooted to detect the STM board in dfu mode.
+
+Ubuntu machine was rebooted to detect the STM board in dfu mode.
+
       lsusb
       Bus 006 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
       Bus 005 Device 003: ID 0489:e0cd Foxconn / Hon Hai Wireless_Device
