@@ -11,7 +11,7 @@ The project could be broken down into four major parts. Briefly explained as:
 
 A. Make STM32F407 understand MicroPython, so that MicroPython code could be run on it.
  
-B. Use external PHY device DP83848PHY connect to STM and setup IP connectivity to the outside world. This is because of the non-availability of Wifi or on -board ethernet port.
+B. Use external PHY device DP83848PHY, connect to STM and setup IP connectivity to the outside world. This is because of the non-availability of Wifi or on-board ethernet port.
 
 C. Configure MQTT telemtery protocol and program the board to send user button clicks. Do the same on Azure IoT hub to receive those clicks.
 
@@ -348,7 +348,7 @@ Run rshell by using tty port ttyACM1
       >> pyb.LED(1).on()
 
 
-This blinked one of the LED in STM32board.
+This turned ON one of the LED in STM32board.
 
 
       
