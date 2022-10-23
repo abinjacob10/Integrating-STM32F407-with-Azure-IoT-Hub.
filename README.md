@@ -287,6 +287,8 @@ This time a reset on the board, by pressing on black reset button helped to get 
       Bus 001 Device 002: ID 04f2:b724 Chicony Electronics Co., Ltd Integrated Camera
       Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
       
+The Pyboard is seen in Disk Manager.
+      
       
 ![MicroPython pyboard listeds as a drive](https://user-images.githubusercontent.com/24519192/197406211-3e8d27c9-12ca-4e87-b421-78f0b5631ea4.png)
 
@@ -302,7 +304,21 @@ Executing dfu-util list command, does not show the dfu capable device. This is c
       This program is Free Software and has ABSOLUTELY NO WARRANTY
       Please report bugs to http://sourceforge.net/p/dfu-util/tickets/
 
-      dfu-util: Cannot open DFU device 04f2:b724                            
+      dfu-util: Cannot open DFU device 04f2:b724  
+      
+   
+     
+A.11  Testing if MicroPython is accessible by turning on a LED on STM32 board.
+
+Knowing the available tty ports is important.
+
+      sudo dmesg | grep tty
+      [    0.089570] printk: console [tty0] enabled
+      [   47.347642] cdc_acm 5-2:1.2: ttyACM0: USB ACM device
+      [10178.960329] cdc_acm 5-2:1.2: ttyACM0: USB ACM device
+      [10200.309347] cdc_acm 3-2:1.1: ttyACM1: USB ACM device            <<ACM1 worked for following command, ACM0 did not work  (sudo python3 -m            rshell.main -p /dev/ttyACM1)
+
+
       
       
 
