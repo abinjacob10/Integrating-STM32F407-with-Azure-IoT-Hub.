@@ -120,4 +120,5 @@ A.7   Create a file named "49-stmdiscovery.rules" to the following location   "/
          
       "sudo udevadm control --reload-rules"
 
-A.8        
+A.8   Put the board in DFU mode. 
+      To do this, you need to make BOOT0 high(connect physically BOOT0 to VDD(3v) on STM32board), and BOOT1 low(no need to do anything about this), and reset the board.     
