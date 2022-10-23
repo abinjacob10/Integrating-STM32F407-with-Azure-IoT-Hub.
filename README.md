@@ -88,3 +88,7 @@ A.5.  make the mboot(ran inside /micropython-1.19.1/ports/stm32). Meaning build 
       
       ls (ran under micropython-1.19.1/ports/stm32/mboot/build-STM32F4DISC)
       
+      drivers  elem.P        firmware.dfu  firmware.hex  fsload.o  genhdr      gzstream.P  main.o  pack.o  pins_af.py          ports     sdcard.P  ui.o           vfs_fat.o  vfs_lfs.o
+      elem.o   firmware.bin  firmware.elf  firmware.map  fsload.P  gzstream.o  lib         main.P  pack.P  pins_STM32F4DISC.c  sdcard.o  shared    ui.P           vfs_fat.P  vfs_lfs.P
+      
+      
