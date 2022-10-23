@@ -140,4 +140,3 @@ A.9   List the attached dfu capable devices using:
       Please report bugs to http://sourceforge.net/p/dfu-util/tickets/
 
       dfu-util: Cannot open DFU device 04f2:b724
-///
