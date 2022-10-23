@@ -316,7 +316,37 @@ Knowing the available tty ports is important.
       [    0.089570] printk: console [tty0] enabled
       [   47.347642] cdc_acm 5-2:1.2: ttyACM0: USB ACM device
       [10178.960329] cdc_acm 5-2:1.2: ttyACM0: USB ACM device
-      [10200.309347] cdc_acm 3-2:1.1: ttyACM1: USB ACM device            <<ACM1 worked for following command, ACM0 did not work  (sudo python3 -m            rshell.main -p /dev/ttyACM1)
+      [10200.309347] cdc_acm 3-2:1.1: ttyACM1: USB ACM device     <<ACM1 worked 
+      
+Using rshell to access the board.
+Install rshell
+
+      sudo apt-get install rshell
+      sudo python3 -m rshell.main -p /dev/ttyACM1
+      Using buffer-size of 512
+      Connecting to /dev/ttyACM1 (buffer-size 512)...
+      Trying to connect to REPL  connected
+      Retrieving sysname ... pyboard
+      Testing if ubinascii.unhexlify exists ... Y
+      Retrieving root directories ... /flash/
+      Setting time ... Oct 14, 2022 18:34:49
+      Evaluating board_name ... pyboard
+      Retrieving time epoch ... Jan 01, 2000
+      Welcome to rshell. Use Control-D (or the exit command) to exit rshell.
+
+
+      Entered repl !!!
+      /home/abin/Downloads/micropython-1.19.1> repl
+      Entering REPL. Use Control-X to exit.
+      >
+      MicroPython v1.19.1 on 2022-10-14; F4DISC with STM32F407
+      Type "help()" for more information.
+      >>
+      >> 
+      >> pyb.LED(1).on()
+
+
+This blinked one of the LED in STM32board.
 
 
       
