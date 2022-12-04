@@ -1,4 +1,4 @@
-# Integrating STM32F407 with Azure IoT Hub.
+# Integrating STM32F407 with Azure IoT Hub
 This README file goes through detailed step by step method to integrate a microcontroller board(STM32F407) with Azure Cloud(IoT Hub).
 
 .
